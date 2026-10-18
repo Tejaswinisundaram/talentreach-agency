@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TalentReach | People & Digital Growth</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">TalentReach</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#jobs">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <p class="eyebrow">PEOPLE. PURPOSE. GROWTH.</p>
+
+            <h1>Better Hiring. Smarter Digital Growth.</h1>
+
+            <p>
+                TalentReach brings recruitment, staffing and digital
+                marketing together to help businesses connect with
+                the right people and grow their online presence.
+            </p>
+
+            <a href="#jobs" class="btn">Explore Opportunities</a>
+            <a href="#services" class="text-link">Our Services</a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <h2>What We Do</h2>
+            <p class="section-intro">
+                Simple solutions for hiring and business growth.
+            </p>
+
+            <div class="card-container">
+                
+                <article class="card">
+                    <h3>Talent Acquisition</h3>
+                    <p>
+                        We help businesses identify suitable candidates,
+                        coordinate hiring, and build stronger teams.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Digital Campaigns</h3>
+                    <p>
+                        We help brands improve online visibility through
+                        content strategy, social media, and targeted campaigns.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Employer Branding</h3>
+                    <p>
+                        We help employers communicate their workplace culture
+                        and attract candidates who align with their goals.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Agency Statistics -->
+        <section class="stats-section">
+            <div class="stat">
+                <h3>Recruit</h3>
+                <p>Connect businesses with talent</p>
+            </div>
+
+            <div class="stat">
+                <h3>Promote</h3>
+                <p>Build digital visibility</p>
+            </div>
+
+            <div class="stat">
+                <h3>Grow</h3>
+                <p>Support people and businesses</p>
+            </div>
+        </section>
+
+        <!-- Job Listings -->
+        <section id="jobs" class="section jobs-section">
+            <h2>Featured Opportunities</h2>
+            <p class="section-intro">
+                Explore sample openings from our job board.
+            </p>
+
+            <div class="job-filters">
+                <label for="job-search">Search jobs</label>
+                <input
+                    type="search"
+                    id="job-search"
+                    placeholder="Try Frontend Developer"
+                >
+
+                <label for="job-category">Filter by category</label>
+                <select id="job-category">
+                    <option value="all">All categories</option>
+                    <option value="technology">Technology</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="hr">Human Resources</option>
+                </select>
+            </div>
+
+            <p id="job-results" aria-live="polite"></p>
+
+            <div class="card-container">
+                <article class="card job-card" data-category="technology">
+                    <p class="job-type">Technology · Entry level</p>
+                    <h3>Frontend Developer</h3>
+                    <p>
+                        Help build responsive websites and user-friendly
+                        interfaces using HTML, CSS and JavaScript.
+                    </p>
+                    <p><strong>Location:</strong> Remote (sample)</p>
+                    <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+                    <button class="btn apply-btn"
+                        data-job="Frontend Developer">
+                        Apply Now
+                    </button>
+                </article>
+
+                <article class="card job-card" data-category="marketing">
+                    <p class="job-type">Marketing · Internship</p>
+                    <h3>Digital Marketing Intern</h3>
+                    <p>
+                        Assist with social media content, campaign planning,
+                        audience research and marketing performance reports.
+                    </p>
+                    <p><strong>Location:</strong> Hybrid (sample)</p>
+                    <p><strong>Skills:</strong> Content, SEO, Analytics</p>
+                    <button class="btn apply-btn"
+                        data-job="Digital Marketing Intern">
+                        Apply Now
+                    </button>
+                </article>
+
+                <article class="card job-card" data-category="hr">
+                    <p class="job-type">Human Resources · Entry level</p>
+                    <h3>HR Recruiter</h3>
+                    <p>
+                        Support candidate sourcing, resume screening,
+                        interview coordination and recruitment communication.
+                    </p>
+                    <p><strong>Location:</strong> On-site (sample)</p>
+                    <p><strong>Skills:</strong> Communication, Screening, Coordination</p>
+                    <button class="btn apply-btn"
+                        data-job="HR Recruiter">
+                        Apply Now
+                    </button>
+                </article>
+            </div>
+
+            <p class="notice">
+                These are demonstration listings, not verified vacancies.
+            </p>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Grow Your Team or Your Brand?</h2>
+
+            <p>
+                Tell us what your business needs, and explore how
+                recruitment and digital marketing can work together.
+            </p>
+
+            <a href="#contact" class="btn">Talk to Our Team</a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2>Let's Work Together</h2>
+            <p>
+                Applying for a role or looking for staffing
+                and digital marketing support? Tell us how we
+                can help.
+            </p>
+
+            <form id="contact-form">
+                <label for="name">Your name</label>
+                <input type="text" id="name"
+                    placeholder="Enter your name" required>
+
+                <label for="email">Email address</label>
+                <input type="email" id="email"
+                    placeholder="Enter your email" required>
+
+                <label for="message">How can we help?</label>
+                <textarea id="message"
+                    placeholder="Tell us what you need"
+                    rows="4" required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+                <p id="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TalentReach. Demo internship project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
